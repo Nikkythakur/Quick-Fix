@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Donate</title>
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+            padding: 0px;
+        }
+        
+        #detailIntro {
+            height: 60vh;
+            background-color: rgb(178, 202, 223);
+            display: flex;
+            justify-content: space-around;
+        }
+        
+        #detailIntro::before {
+            content: '';
+            top: 0px;
+            left: 0px;
+            width: 100%;
+            height: 80%;
+            position: absolute;
+            background-color: white;
+            clip-path: polygon(100% 100%, 200% 0%, 0% 75%);
+        }
+        
+        #donateText {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center
+        }
+        
+        img {
+            height: 75%;
+            width: 100%;
+        }
+        
+        #imgBg {
+            background-color: yellow;
+        }
+        
+        #inputDetails {
+            width: 100%;
+            position: absolute;
+            z-index: 2;
+        }
+        
+        #input1 {
+            height: 150px;
+            width: 550px;
+            border: 2px solid rgb(0, 113, 206);
+            border-radius: 50px;
+            padding: 20px 10PX;
+            margin-left: 15%;
+        }
+        
+        #inputDetails div h1 {
+            margin-left: 30vw;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div id="detailIntro">
+        <div id="donateText">
+            <h1>SO YOU ARE </h1>
+            <h1>A HELPING HAND</h1>
+            <p>Donate it for needy</p>
+        </div>
+        <div id="imageBg">
+            <img src="img/img2.png" alt="">
+        </div>
+    </div>
+
+    <section id="inputDetails">
+        <div>
+            <h1>About and Address:</h1>
+            <textarea id="input1"></textarea>
+
+        </div>
+
+    </section>
+
+</body>
+
+</html>
